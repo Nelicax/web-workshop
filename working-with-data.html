@@ -19,8 +19,13 @@
             <button class="btn btn-primary" onclick="loadDataGrid()">Load</button>
             <button class="btn btn-secondary" onclick="displayAverage()">Average</button>
         </section>
+        <section class="span-1">
+            <label for="scoreInput">Passing score</label>
+            <input id="scoreInput" type="number" value="60" onchange="refreshScores()" />
+        </section>
     </section>
     <section class="row-fluid">
+        <ol id="dataList2" hidden></ol>
         <section id="dataList" class="border">
             <div class="row">
                 <div class="col-md">
